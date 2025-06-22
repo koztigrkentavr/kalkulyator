@@ -4,7 +4,7 @@ function hisobla(amal) {
     let natija = document.getElementById("natija");
 
     if (isNaN(num1) || isNaN(num2)) {
-        natija.innerText = "❌ Iltimos, son kiriting!";
+        natija.innerText = "Iltimos, son kiriting!";
         return;
     }
 
@@ -20,10 +20,10 @@ function hisobla(amal) {
             result = num1 * num2;
             break;
         case '/':
-            result = num2 !== 0 ? num1 / num2 : "❌ 0 ga bo‘lib bo‘lmaydi!";
+            result = num2 !== 0 ? num1 / num2 : "0 ga bo‘lib bo‘lmaydi!";
             break;
         default:
-            result = "❌ Xatolik!";
+            result = "Xatolik!";
     }
 
     natija.innerText = result;
